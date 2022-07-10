@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app_6319c10014/views/register_ui.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class LoginUI extends StatefulWidget {
@@ -233,7 +234,14 @@ class _LoginUIState extends State<LoginUI> {
                   ),
                 ),
                 title: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => RegisterUI(),
+                      ),
+                    );
+                  },
                   child: Text(
                     "Sign Up",
                     style: TextStyle(
